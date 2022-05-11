@@ -1,0 +1,15 @@
+<div class="list-outline">
+    <div class="heading">
+        <h1> Template Preview</h1>
+        <button mat-stroked-button class="create-button" (click)="navigateToCreateTemplate()">close</button>
+    </div>
+
+    <hr class="horizontal" />
+
+    <ng-container *ngIf="templateList">
+        <div *ngFor="let template of templateList" style="margin-left: 150px;">
+            <p style="color: red;">{{template.Label}}</p>
+            <p class="box-element">{{template.Placeholder}}</p>
+        </div>
+    </ng-container>
+</div>

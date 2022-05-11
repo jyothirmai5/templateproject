@@ -1,0 +1,26 @@
+.box-element{
+    border: 2px solid black;
+    padding: 3px;
+    width: 200px;
+}
+
+.horizontal {
+    border-width: 2px;
+    border-color: black;
+  }
+
+.list-outline{
+    border: 3px solid black;
+  margin: auto;  
+  height: 1000px;
+  }
+
+  .create-button{
+    height: 32px;
+    margin-top: 22px;
+  }
+
+  .heading{
+    display: flex;
+    justify-content: space-evenly;
+  }

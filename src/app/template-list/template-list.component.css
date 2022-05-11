@@ -1,0 +1,32 @@
+.value {
+    width: 300px !important;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 20px;
+  }
+
+  .heading{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .horizontal {
+    border-width: 2px;
+    border-color: black;
+  }
+
+  .create-button{
+    height: 32px;
+    margin-top: 22px;
+    background-color: skyblue;
+  }
+
+  .list-outline{
+    border: 3px solid black;
+  margin: auto;  
+  height: 1000px;
+  }
+
+  

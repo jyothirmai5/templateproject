@@ -1,0 +1,21 @@
+<h2>ToolBox</h2>
+<button (click)="addTemplateItem()">Text Field</button>
+<h1>Create Template</h1>
+<div>
+  <form [formGroup]="templateForm">
+    <ng-container formArrayName="Templates">
+      <div *ngFor="let item of templateArray.controls; let i = index" [formGroupName]="i" class="create-box">
+      <button mat-stroked-button class="create-button" style="margin-left: 225px;" (click)="removeTemplateItem(i)">clear</button>
+        <p>Template Name</p>
+        <input formControlName="Name" />
+        <p>Field Label</p>
+        <input formControlName="Label" />
+        <p>Placeholder</p>
+        <input formControlName="Placeholder" />
+      </div>
+    </ng-container>
+    <p style="color: red;" *ngIf="!templateForm.valid">Please fill all details</p>
+  </form>
+    <button mat-stroked-button (click)="redirectToTemplatePreview()" style="margin-right: 5px;">PREVIEW</button>
+    <button mat-stroked-button (click)="redirectToTemplateList()">SUBMIT</button>
+</div>

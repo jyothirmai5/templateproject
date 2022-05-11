@@ -1,0 +1,15 @@
+<div class="list-outline">
+  <div class="heading">
+    <h1>Template List</h1>
+    <button class="create-button" (click)='redirectToCreate()' mat-stroked-button>Create</button>
+  </div>
+  <hr class="horizontal" />
+
+  <p style="margin-left: 50px;">Template Name</p>
+  <div *ngIf="templateList">
+    <mat-list *ngFor='let template of templateList; let i=index'>
+      <mat-list-item role="listitem" class="value"><span style="margin-right: 30px;">{{i+1}}</span>
+        {{template.Name}}</mat-list-item>
+    </mat-list>
+  </div>
+</div>
